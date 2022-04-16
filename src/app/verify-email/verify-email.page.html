@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Verify Your Email</ion-title>
+    <ion-buttons slot="start" class="btn" [routerLink]="['/login-page']">
+      <ion-button>
+        <ion-icon name="chevron-back"></ion-icon>
+        Back
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+  <ion-content>
+    <div class="style">
+
+        <h2>Firebase Verify Email</h2>
+        <p>
+          Please check your email and click on the link to verfiy your email address.
+        </p>
+
+    <ion-button type="submit" class="btn1" (click)="authService.SendVerificationMail()" expand="full">
+      Resend Verification Email
+    </ion-button>
+  </div>
+  </ion-content>

@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Main
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large" class="ion-text-center">MiFit</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <div #map id="map"></div>
+
+  <ion-row>
+    <ion-col>
+      <ion-button class="btn" type="submit" color="warning" expand="full" (click)="location()" >Get Current Location</ion-button>
+      <ion-button class="btn1" type="submit" color="warning" expand="full" (click)="clickHandler()" >{{isRunning ? 'Stop Running Session' : 'Start Running Session'}}</ion-button>
+    </ion-col>
+  </ion-row>
+  <table class="styled-table">
+    <thead>
+        <tr>
+            <th>Time</th>
+            <th>Distance</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="active-row">
+          <td> 
+            <div class="stop-watch">
+            <div class="display">{{format(mm)}}:{{format(ss)}}:{{format(ms)}}</div>
+          </div> 
+        </td>
+          <td class="temp"><h2>0.00</h2></td>
+        </tr>
+    </tbody>
+</table>
+</ion-content>
+

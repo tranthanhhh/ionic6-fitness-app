@@ -1,0 +1,58 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Settings
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title class="ion-text-center" size="large">Settings</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <table class="styled-table">
+    <thead>
+        <tr>
+            <th>Units</th>
+            <th>Unit Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Weight</td>
+            <td>
+              <ion-select  >
+              <ion-select-option value="lb">lb</ion-select-option>
+              <ion-select-option value="kg">Kg</ion-select-option>
+            </ion-select>
+          </td>
+        </tr>
+        <tr class="active-row">
+            <td>Height</td>
+            <td>
+              <ion-select  >
+                <ion-select-option value="foot">Foot</ion-select-option>
+                <ion-select-option value="cm">Cm</ion-select-option>
+              </ion-select>
+            </td>
+        </tr>
+        <tr>
+          <td>Distance</td>
+          <td>
+            <ion-select  >
+              <ion-select-option value="km">Km</ion-select-option>
+              <ion-select-option value="Mile">Mile</ion-select-option>
+            </ion-select>
+          </td>
+        </tr>
+    </tbody>
+</table>
+
+<ion-row>
+  <ion-col>
+    <ion-button class="btn" [routerLink]="['/login-page']" type="submit" color="danger" expand="full" (click)="authService.SignOut()">Log Out</ion-button>
+  </ion-col>
+</ion-row>
+</ion-content>

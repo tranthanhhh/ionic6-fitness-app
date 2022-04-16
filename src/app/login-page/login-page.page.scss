@@ -1,0 +1,50 @@
+.formStyle { 
+    background-color: rgba(0, 0, 0, 0.32);
+    border-radius: 5px;
+    box-shadow: 0 0 #000;
+    width: 100%; 
+    height: 255px;
+    padding: 40px 15px;
+    margin-top: 125px;
+
+
+}
+
+.btn {
+    margin-top: 20px;
+    --background-activated: #e5e5e5;
+}
+.btn1 {
+    margin-top: 5px;
+    --background-activated: #e5e5e5;
+}
+#logo {
+    display: block;
+    margin: auto;
+    height: 150px;
+    width: 150px;
+    margin-top: 95px;
+    margin-bottom: -45px;
+
+}
+
+.pass-forgot {
+    margin-left: 170px;
+    color: #e5e5e5;
+    
+}
+.text {
+    margin: 12px 180px;
+}
+
+ion-content {
+    --background: url(/assets/img/bg.jpg);
+    --ion-font-family:  'Montserrat'!important;
+    font-family:  'Montserrat' !important;
+}
+
+ion-header {
+
+    --ion-font-family: 'Montserrat' !important;
+    font-family: 'Montserrat' !important;
+}

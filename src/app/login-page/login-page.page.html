@@ -1,0 +1,33 @@
+
+<ion-header>
+</ion-header>
+<ion-content>
+    <img id="logo" src="assets/img/Mifit-02.png" alt="">
+  <div class="formStyle">
+  <form class="login">
+    <div class="form">
+    <ion-item color="transparent" lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" #email required></ion-input>
+    </ion-item>
+    <ion-item color="transparent" lines="full">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" #password required></ion-input>
+    </ion-item>
+    <a href="" class="pass-forgot" slot="end">Forgot your password?</a>
+  </div>
+  </form>
+
+</div>
+<ion-row>
+  <ion-col>
+    <ion-button class="btn" type="submit" color="primary" expand="full" (click)="logIn(email, password)">Login</ion-button>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <p class="text"> OR</p>
+<ion-col>
+  <ion-button class="btn1" [routerLink]="['/registration']" type="submit" color="primary" expand="full" >Create New Account</ion-button>
+</ion-col>
+</ion-row>
+</ion-content>

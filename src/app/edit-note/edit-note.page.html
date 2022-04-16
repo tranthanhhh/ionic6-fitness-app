@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Edit Note
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list lines="full">
+    <form [formGroup]="updateBookingForm" (ngSubmit)="updateForm()">
+      <ion-item>
+        <ion-label position="floating">Title</ion-label>
+        <ion-input formControlName="title" type="text" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Note</ion-label>
+        <ion-input formControlName="note" type="text" required>
+        </ion-input>
+      </ion-item>
+      <ion-row>
+        <ion-col>
+          <ion-button type="submit" color="primary" shape="full" expand="block">Update Note</ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </ion-list>
+</ion-content>

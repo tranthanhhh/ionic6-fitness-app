@@ -1,0 +1,81 @@
+ion-content{
+    --ion-font-family:  'Montserrat'!important;
+    font-family:  'Montserrat' !important;
+  }
+
+  #map {
+    height: 50%;
+    margin-top: 20px;
+    margin-bottom: -50px;
+
+}
+
+.btn {
+  margin-top: 65px;
+  --background-activated: #e5e5e5;
+  font-weight: bold;
+}
+
+.btn1 {
+  margin-top: 10px;
+  --background-activated: #e5e5e5;
+  font-weight: bold;
+  
+}
+
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px auto;
+  font-size: 0.9em;
+  min-width: 400px;
+  // position: absolute;
+}
+
+th, td {
+  border-right: 2px solid #ffffff;
+}
+
+th:last-child, td:last-child {
+  border-right: none;
+}
+.styled-table thead tr {
+  background-color: #F48C06;
+  color: #000000;
+  text-align: center;
+  border-top: 2px solid rgb(255, 255, 255);
+
+}
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+.styled-table tbody tr {
+  border-top: 2px solid rgb(255, 255, 255);
+  border-bottom: 2px solid #ffffff;
+  text-align: center;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: rgb(255, 255, 255);
+}
+
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.stop-watch {
+  text-align: center;
+  padding: 12px 15px;
+  margin-top: -23px;
+  position: absolute;
+}
+.display {
+  font-size: 24px;
+}
+
+
+
+

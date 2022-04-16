@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Note
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title class="ion-text-center" size="large">My Note</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list class="ios list-ios hydrated">
+
+    <ion-item *ngFor="let booking of Bookings" class="user-list">
+      <ion-label>
+        <h5 class="color">
+          <ion-icon name="checkmark"></ion-icon> {{booking.title}}
+        </h5>
+        <p>
+          <ion-icon name="attach"></ion-icon> {{booking.note}}
+        </p>
+      </ion-label>
+      <div class="item-note" item-end>
+        <button ion-button clear [routerLink]="['/edit-note/', booking.$key]">
+          <ion-icon name="create" style="zoom:2.0"></ion-icon>
+        </button>
+        <button ion-button clear (click)="deleteBooking(booking.$key)">
+          <ion-icon name="trash" style="zoom:2.0"></ion-icon>
+        </button>
+      </div>
+    </ion-item>
+  </ion-list>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button [routerLink]="['make-note']">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

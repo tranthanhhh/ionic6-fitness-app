@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registration Form</ion-title>
+    <ion-buttons slot="start" class="btn" [routerLink]="['/login-page']">
+      <ion-button>
+        <ion-icon name="chevron-back"></ion-icon>
+        Back
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="formStyle">
+  <div class="form">
+  <form>    
+    <ion-item color="transparent" lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" #email required></ion-input>
+    </ion-item>
+    <ion-item color="transparent" lines="full">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" #password required></ion-input>
+    </ion-item>
+  </form>
+</div>
+</div>
+  <ion-row>
+    <ion-col> 
+    <ion-button type="submit"  class="btn1"  color="primary" expand="full" (click)="signUp(email, password)" >Register</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>
