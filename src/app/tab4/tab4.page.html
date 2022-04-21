@@ -13,7 +13,7 @@
   </ion-header>
   <ion-list class="ios list-ios hydrated">
 
-    <ion-item *ngFor="let booking of Bookings" class="user-list">
+    <ion-item *ngFor="let booking of Bookings"  class="user-list">
       <ion-label>
         <h5 class="color">
           <ion-icon name="checkmark"></ion-icon> {{booking.title}}
@@ -23,7 +23,7 @@
         </p>
       </ion-label>
       <div class="item-note" item-end>
-        <button ion-button clear [routerLink]="['/edit-note/', booking.$key]">
+        <button ion-button clear [routerLink]="['edit-note', booking.$key]">
           <ion-icon name="create" style="zoom:2.0"></ion-icon>
         </button>
         <button ion-button clear (click)="deleteBooking(booking.$key)">

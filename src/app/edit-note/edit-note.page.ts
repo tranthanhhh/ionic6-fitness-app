@@ -33,7 +33,7 @@ export class EditNotePage implements OnInit {
   updateForm() {
     this.aptService.updateBooking(this.id, this.updateBookingForm.value)
       .then(() => {
-        this.router.navigate(['/home']);
+        this.router.navigate(['/tabs/tab4']);
       })
       .catch(error => console.log(error));
   }

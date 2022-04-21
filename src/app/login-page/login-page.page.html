@@ -14,7 +14,7 @@
       <ion-label position="floating">Password</ion-label>
       <ion-input type="password" #password required></ion-input>
     </ion-item>
-    <a href="" class="pass-forgot" slot="end">Forgot your password?</a>
+    <a href="" class="pass-forgot" [routerLink]="['/password-reset']" slot="end">Forgot your password?</a>
   </div>
   </form>
 

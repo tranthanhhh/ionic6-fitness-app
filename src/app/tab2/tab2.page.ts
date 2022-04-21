@@ -25,7 +25,7 @@ export class Tab2Page {
 
   @ViewChild('map', {read: ElementRef, static: false}) mapRef: ElementRef;
 
-  constructor( public alertController : AlertController ) {
+  constructor( ) {
     this.location();
   }
 
