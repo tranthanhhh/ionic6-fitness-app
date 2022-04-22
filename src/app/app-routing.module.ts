@@ -33,7 +33,7 @@ const routes: Routes = [
     loadChildren: () => import('./make-note/make-note.module').then( m => m.MakeNotePageModule)
   },
   {
-    path: 'edit-note',
+    path: 'edit-note/:id',
     loadChildren: () => import('./edit-note/edit-note.module').then( m => m.EditNotePageModule)
   },
   {
@@ -43,6 +43,10 @@ const routes: Routes = [
   {
     path: 'password-reset',
     loadChildren: () => import('./password-reset/password-reset.module').then( m => m.PasswordResetPageModule)
+  },
+  {
+    path: 'about',
+    loadChildren: () => import('./about/about.module').then( m => m.AboutPageModule)
   }
 ];
 @NgModule({

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Note } from '../shared/Note';
+
 import { NoteService } from './../shared/note.service';
 @Component({
   selector: 'app-tab4',
@@ -9,7 +10,8 @@ import { NoteService } from './../shared/note.service';
 export class Tab4Page implements OnInit {
   Bookings = [];
   constructor(
-    private aptService: NoteService
+    private aptService: NoteService,
+    
   ) { }
 
   ngOnInit() {
@@ -35,4 +37,5 @@ export class Tab4Page implements OnInit {
       this.aptService.deleteBooking(id)
     }
   }
+
 }

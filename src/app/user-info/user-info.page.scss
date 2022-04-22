@@ -1,19 +1,23 @@
 .content { 
-    font-weight: bold;
-    margin-top: 50px;
-    
+  font-weight: bold;
+  margin-top: 20px;
+  
 }
 
 ion-content{
-    --ion-font-family:  'Montserrat'!important;
-    font-family:  'Montserrat' !important;
-  }
+  --ion-font-family:  'Montserrat'!important;
+  font-family:  'Montserrat' !important;
+}
 
 #userlogo { 
-    display: block;
-    margin: auto;
-    height: 200px;
-    width: 200px;
-    margin-top: 150px;
-    margin-bottom: -45px;
-  }
+  display: block;
+  margin: auto;
+  height: 200px;
+  width: 200px;
+  margin-top: 50px;
+  margin-bottom: -45px;
+}
+
+.btn {
+margin-top: 15px;
+}

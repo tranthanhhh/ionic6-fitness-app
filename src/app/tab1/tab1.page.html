@@ -16,9 +16,18 @@
   <ion-list>
     <ion-item>
       <ion-avatar slot="start">
-        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+        <img src="assets/img/avatar.png">
       </ion-avatar>
-      <ion-label>User Name<br>DOB</ion-label>
+      <ion-item *ngFor="let user of UserInfos"  lines="none" class="user-list">
+        <ion-label>
+          <h5>
+            <ion-icon name="person"></ion-icon> {{user.username}}
+          </h5>
+          <h5>
+            <ion-icon name="star"></ion-icon> {{user.DOB}}
+          </h5>
+        </ion-label>
+      </ion-item>
       <ion-buttons slot="end" class="btn" [routerLink]="['userInfo']">
         <ion-button>
           <ion-icon name="settings"></ion-icon>
@@ -26,6 +35,8 @@
       </ion-buttons>
     </ion-item>
     </ion-list>
+
+
   </div>
   <table class="styled-table">
     <thead>

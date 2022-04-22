@@ -12,31 +12,39 @@
 <ion-content>
 
   <div class="content">
-    <ion-item>
-      <ion-label position="fixed">User Name</ion-label>
-      <ion-input ></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="fixed">DOB</ion-label>
-      <ion-input></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label >Genre</ion-label>
-      <ion-select  >
-        <ion-select-option value="Male">Male</ion-select-option>
-        <ion-select-option value="Female">Female</ion-select-option>
-        <ion-select-option value="Other">Other</ion-select-option>
-      </ion-select>
-    </ion-item>
-    <ion-item>
-      <ion-label >Weight</ion-label>
-      <ion-input ></ion-input>
-
-    </ion-item>
-    <ion-item>
-      <ion-label position="fixed">Height</ion-label>
-      <ion-input></ion-input>
-    </ion-item>
+    <ion-list lines="full">
+      <form [formGroup]="userForm" (ngSubmit)="formSubmit()">
+        <ion-item>
+          <ion-label position="floating">User Name</ion-label>
+          <ion-input formControlName="username" type="text" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">DOB</ion-label>
+          <ion-input formControlName="DOB" type="text" required>
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Genre</ion-label>
+          <ion-input formControlName="genre" type="text" required>
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Weight</ion-label>
+          <ion-input formControlName="weight" type="text" required>
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Height</ion-label>
+          <ion-input formControlName="height" type="text" required>
+          </ion-input>
+        </ion-item>
+        <ion-row>
+          <ion-col>
+            <ion-button type="submit" class="btn" color="primary" shape="full" expand="block">Save</ion-button>
+          </ion-col>
+        </ion-row>
+      </form>
+    </ion-list>
   </div>
 
   <img id="userlogo" src="assets/img/user.png" alt="">

@@ -52,7 +52,12 @@
 
 <ion-row>
   <ion-col>
-    <ion-button class="btn" [routerLink]="['/login-page']" type="submit" color="danger" expand="full" (click)="authService.SignOut()">Log Out</ion-button>
+    <ion-button type="submit" color="warning" expand="full" [routerLink]="['/about']">About</ion-button>
   </ion-col>
 </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button class="btn" [routerLink]="['/login-page']" type="submit" color="danger" expand="full" (click)="authService.SignOut()">Log Out</ion-button>
+    </ion-col>
+  </ion-row>
 </ion-content>
